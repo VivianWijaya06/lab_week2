@@ -36,18 +36,18 @@ class HangmanGame {
       String? input = stdin.readLineSync();
 
       if (input == null || input.isEmpty) {
-        print("⚠️ Please enter something!\n");
+        print("Please enter something!\n");
         continue;
       }
       if (input.length != 1) {
-        print("⚠️ Please enter only one letter!\n");
+        print("Please enter only one letter!\n");
         continue;
       }
 
       String guess = input.toLowerCase();
 
       if (usedLetters.contains(guess)) {
-        print("⚠️ You already used '$guess'. Try another.\n");
+        print("You already used '$guess'. Try another.\n");
         continue;
       }
 
